@@ -1,0 +1,209 @@
+body,html{
+    min-width:740px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrap{
+    position: relative;
+    background-color: #FFFFF0;
+    height:100vh;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    background-color: #DEB887;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-family: "Palatino Linotype", sans-serif;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.header #Tools{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+
+.header #Search{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    float: left;
+}
+
+.header #Categories{
+    position: absolute;
+    left: 100px;
+    top: 50%;
+
+}
+
+/* Remove margins and padding from the list */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #FAFAD2;
+    font-size: 18px;
+    transition: 0.2s;
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:nth-child(odd) {
+    background: #F0FFF0;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+    background: #FFFFF0;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+/* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+
+
+.content-list{
+
+}
+
+.add{
+    cursor: pointer;
+    position: fixed;
+    text-decoration: none;
+    text-align:center;
+    padding:11px 20px;
+    border:none;
+    border-radius: 50px;
+    font:30px Arial, Helvetica, sans-serif;
+    color:#e9f2e9;
+    background-color:#3bc757;
+    bottom: 5%;
+    right: 3%;
+    outline: none;
+    -webkit-transition:.2s all;
+
+}
+.transition {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.popup{
+    display: none;
+    position: fixed;
+    background-color: #BC8F8F;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    right: 10%;
+}
+
+.Object{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.close-block {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 16px;
+    height: 16px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAElBMVEXqAAD8oaH/AAD/ra3/vr7///91+I/7AAAAQklEQVR42oXPwQoAIAgD0JXu/385FfTQgnYweKAp9pUXmE+swAFWAG8owQBTqjQQ8SQOcAdRQVtkqHy7dDFd/X/tAVqqAopyUfkOAAAAAElFTkSuQmCC);
+    cursor: pointer;
+}
+
+.inp{
+    width: 100%;
+    height: 100%;
+}
+
+#cont{
+    position: relative;
+    padding: 20px;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
