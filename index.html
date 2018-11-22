@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="wrap">
+
+        <div id="header" class="header">
+            <h2>My To Do List</h2>
+        </div>
+
+        <div id="content-list" class="content-list">
+                <ul id="sortable">
+
+                </ul>
+        </div>
+
+        <div id="popup" class="popup">
+            <div class="Object">
+                    <div class="div1" style="background:#3CB371;height:20px;width:20px;position:absolute;"></div>
+                    <div class="div2" style="background:#3CB371;height:20px;width:20px;position:absolute;"></div>
+                    <div class="div3" style="background:#3CB371;height:20px;width:20px;bottom:0;right:0; position:absolute;"></div>
+                    <div class="div4" style="background:#3CB371;height:20px;width:20px;bottom:0;right:0; position:absolute;"></div>
+
+                    <div id="cont">
+                        <textarea class="inp" id="inp" type="text" name="taskInput" placeholder="Input item to do"></textarea>
+                    </div>
+
+                    <span id="close" class='close-block'></span>
+            </div>
+        </div>
+
+        <button id="add" class="add" rel="popup">
+                +
+        </button>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
