@@ -1,2 +1,2 @@
 # to-do-list
-Simple JQuery To Do List
+Simple JQuery sortable To Do List with using of local storage
